@@ -1,0 +1,52 @@
+﻿@using AzureWebServiceDemo.Models
+@using AzureWebServiceDemo.ViewModels
+@model IndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<style type="text/css">
+    table.gridtable {
+	border-width: 1px;
+	border-color: gainsboro;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: gainsboro;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: gainsboro;
+}
+</style>
+
+<h1>Welcome to Salesfarce!</h1>
+<p>Environment Name: @Model.Environment</p>
+
+<h2>Existing Contacts</h2>
+
+<table class="gridtable" >
+    <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Email</th>
+        <th>Birthday</th>
+    </tr>
+    @foreach (var contact in Model.Contacts)
+    {
+        <tr>
+            <td>@contact.Name</td>
+            <td>@contact.Company</td>
+            <td>@contact.Email</td>
+            <td>@contact.Birthday.ToShortDateString()</td>
+        </tr>
+    }
+</table>
+
+<h2>Add New Contact</h2>
+@Html.Partial("AddContact", new Contact())

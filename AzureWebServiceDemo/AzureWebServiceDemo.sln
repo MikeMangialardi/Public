@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureWebServiceDemo", "AzureWebServiceDemo\AzureWebServiceDemo.csproj", "{372BEC19-4939-4229-8DA4-9B3DC8854791}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureWebServiceDemo.Cloud", "AzureWebServiceDemo.Cloud\AzureWebServiceDemo.Cloud.ccproj", "{998E8460-628E-4AB1-B5FA-E0CCCB3B9E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372BEC19-4939-4229-8DA4-9B3DC8854791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372BEC19-4939-4229-8DA4-9B3DC8854791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372BEC19-4939-4229-8DA4-9B3DC8854791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372BEC19-4939-4229-8DA4-9B3DC8854791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998E8460-628E-4AB1-B5FA-E0CCCB3B9E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998E8460-628E-4AB1-B5FA-E0CCCB3B9E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998E8460-628E-4AB1-B5FA-E0CCCB3B9E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998E8460-628E-4AB1-B5FA-E0CCCB3B9E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

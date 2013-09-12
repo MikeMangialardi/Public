@@ -1,0 +1,21 @@
+﻿@model AzureWebServiceDemo.Models.Contact
+@using (Html.BeginForm("AddContact", "Home"))
+{
+    <fieldset>
+        <legend>Contact</legend>
+        
+        <div class="editor-label">@Html.LabelFor(m => m.Name)</div>
+        <div class="editor-field">@Html.TextBoxFor(m => m.Name)</div>
+        
+        <div class="editor-label">@Html.LabelFor(m => m.Company)</div>
+        <div class="editor-field">@Html.TextBoxFor(m => m.Company)</div>
+        
+        <div class="editor-label">@Html.LabelFor(m => m.Email)</div>
+        <div class="editor-field">@Html.TextBoxFor(m => m.Email)</div>
+        
+        <div class="editor-label">@Html.LabelFor(m => m.Birthday)</div>
+        <div class="editor-field">@Html.TextBoxFor(m => m.Birthday)</div>
+        
+        <input type="submit" value="OK" style="margin-top: 10px"/>
+    </fieldset>
+}
